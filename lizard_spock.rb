@@ -70,6 +70,13 @@ loop do
     display_results(choice, computer_choice)
 
     match_score(choice, computer_choice)
+
+    counter = 0
+
+    loop do
+      counter += 1
+      break if counter == 5
+    end
   end
 
   prompt('Would you like to play again?  Please enter y or n.')
